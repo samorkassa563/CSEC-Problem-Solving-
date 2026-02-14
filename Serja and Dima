@@ -17,4 +17,4 @@ While left <= right:
    elif turn == 1:
       Dima += choosen
    turn = 1 - turn
-print (" ".join(sereja, Dima))
+print (" ".join([str(sereja), str(Dima)]))
