@@ -1,0 +1,20 @@
+n = input()
+a = list(map(int, input().split()))
+left = 0
+right = n - 1
+sereja = 0
+Dima = 0
+turn = 0
+While left <= right:
+   if a[left] > a[right]:
+       choosen = a[left]
+       left += 1
+   elif a[right] > a[left]:
+       choosen = a[right]
+       right -= 1
+   if turn == 0:
+      sereja += choosen
+   elif turn == 1:
+      Dima += choosen
+   turn = 1 - turn
+print (" ".join(sereja, Dima))
