@@ -1,4 +1,4 @@
-n = map(int, input().split())
+n, h = map(int, input().split())
 f = list(map(int, input().split()))
  
 w = 0
